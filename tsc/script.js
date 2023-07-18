@@ -47,6 +47,13 @@ sonSubmitBtn === null || sonSubmitBtn === void 0 ? void 0 : sonSubmitBtn.addEven
     let sonWithdrawal = document.getElementById("son-widthdrawal");
     let sonWithdrawalValue = Number(sonWithdrawal.value);
     son = new SonAccount(sonDepositValue, sonWithdrawalValue);
+    let showData = document.getElementById("show-son-data");
+    let newDiv = document.createElement("div");
+    newDiv.innerHTML = `
+  <p>This is the amount the son deposited: ${sonDepositValue} € </p>
+  <p>This is the amount the son withdrawn: ${sonWithdrawalValue} € </p>
+  `;
+    showData.appendChild(newDiv);
 });
 const motherSubmitBtn = document.getElementById("mother-button");
 let mother;

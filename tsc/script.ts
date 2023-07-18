@@ -55,6 +55,13 @@ sonSubmitBtn?.addEventListener("click", function (e) {
   ) as HTMLInputElement
   let sonWithdrawalValue = Number(sonWithdrawal.value)
   son = new SonAccount(sonDepositValue, sonWithdrawalValue)
+  let showData = document.getElementById("show-son-data") as HTMLDivElement
+  let newDiv = document.createElement("div")
+  newDiv.innerHTML = `
+  <p>This is the amount the son deposited: ${sonDepositValue} € </p>
+  <p>This is the amount the son withdrawn: ${sonWithdrawalValue} € </p>
+  `
+  showData.appendChild(newDiv)
 })
 
 const motherSubmitBtn = document.getElementById("mother-button")
