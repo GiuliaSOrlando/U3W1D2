@@ -1,0 +1,37 @@
+body {
+  background-image: url("background.avif");
+  font-family: sans-serif;
+}
+
+h3 {
+  background-color: rgba(0, 255, 145, 0.447);
+  padding: 4px 100px;
+  border-radius: 25px;
+  display: inline;
+}
+
+form {
+  background-color: rgba(51, 195, 51, 0.489);
+  padding: 25px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid rgb(0, 255, 106);
+  margin: 40px;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.686);
+  border: none;
+  color: rgb(51, 195, 51);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.724);
+}
+
+button {
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(0, 255, 145, 0.447);
+  padding: 6px 30px;
+}

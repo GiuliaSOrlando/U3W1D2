@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <form>
+      <h3>Son account</h3>
+      <p>
+        This account allows you to deposit, withdraw and will show you the
+        current balance
+      </p>
+      <label for="son-deposit">Deposit</label>
+      <input type="number" id="son-deposit" placeholder="Inserisci un numero" />
+
+      <label for="son-withdrawal">Withdrawal</label>
+      <input
+        type="number"
+        id="son-widthdrawal"
+        placeholder="Inserisci un numero"
+      />
+      <button id="son-button">Invia</button>
+    </form>
+    <form>
+      <h3>Mother account</h3>
+      <p>
+        This account allows you to deposit, withdraw and will show you the
+        current balance. It will also show the interest (10%) calculated on the
+        current amount
+      </p>
+      <label for="mother-deposit">Deposit</label>
+      <input
+        type="number"
+        id="mother-deposit"
+        placeholder="Inserisci un numero"
+      />
+
+      <label for="mother-withdrawal">Withdrawal</label>
+      <input
+        type="number"
+        id="mother-widthdrawal"
+        placeholder="Inserisci un numero"
+      />
+      <button id="mother-button">Invia</button>
+      <div class="show-data"></div>
+    </form>
+    <script src="/tsc/script.js"></script>
+  </body>
+</html>
