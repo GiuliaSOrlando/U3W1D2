@@ -8,13 +8,13 @@ class SonAccount {
     }
     oneDeposit(depAmount) {
         this.balanceInit = this.balanceInit + depAmount;
-        console.log("This is the amount you deposited: " + depAmount);
+        console.log("This is the amount you deposited: " + depAmount + "€");
         return this.balanceInit;
     }
     oneWithdrawal(withdrawalAmount) {
         if (withdrawalAmount < this.balanceInit) {
             this.balanceInit = this.balanceInit - withdrawalAmount;
-            console.log("This is the amount you withdrawn: " + withdrawalAmount);
+            console.log("This is the amount you withdrawn: " + withdrawalAmount + "€");
             return this.balanceInit;
         }
         else {
@@ -23,7 +23,7 @@ class SonAccount {
         }
     }
     printBalance() {
-        console.log("This is the current balance: " + this.balanceInit);
+        console.log("This is the current balance: " + this.balanceInit + "€");
         this.balanceInit;
     }
 }
@@ -34,7 +34,7 @@ class MotherAccount extends SonAccount {
     }
     interest() {
         let myInterest = (this.balanceInit / 100) * 10;
-        console.log("The amount of the interset is equal to ", myInterest);
+        console.log("The amount of the interset is equal to " + myInterest + "€");
         return myInterest;
     }
 }
